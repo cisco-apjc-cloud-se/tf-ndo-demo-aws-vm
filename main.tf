@@ -35,8 +35,4 @@ module "aws" {
   aws_apps        = var.aws_apps
   instance_type   = "t3a.micro"
   public_key      = var.public_key
-
-  depends_on = [
-    module.ndo
-  ]
 }
