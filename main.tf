@@ -22,7 +22,7 @@ terraform {
 ### Setup AWS Provider ###
 
 provider "aws" {
-  region     = "ap-southeast-2"
+  region     = "ap-southeast-2"  # Default Region
   access_key = data.vault_generic_secret.aws-prod.data["access"]
   secret_key = data.vault_generic_secret.aws-prod.data["secret"]
 }

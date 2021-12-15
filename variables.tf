@@ -7,6 +7,10 @@ variable "public_key" {
   type = string
 }
 
+variable "public_key_rsa" {
+  type = string
+}
+
 variable "aws_apps" {
   type = map(object({
     name = string
