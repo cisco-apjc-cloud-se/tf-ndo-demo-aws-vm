@@ -116,6 +116,7 @@ module "ec2" {
   monitoring             = true
   vpc_security_group_ids = [data.aws_security_group.sg[each.key].id]
   subnet_id              = data.aws_subnet.subnet[each.key].id
+  associate_public_ip_address = true
 
   tags = {
     EPG = each.value.tier
