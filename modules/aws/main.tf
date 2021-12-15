@@ -119,6 +119,6 @@ module "ec2" {
   associate_public_ip_address = true
 
   tags = {
-    EPG = each.value.tier
+    EPG = format("%s-%s",each.value.app_name, each.value.tier)
   }
 }

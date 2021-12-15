@@ -12,13 +12,13 @@ aws_apps = {
         vpc_cidr = "10.1.2.0/24"
         instances = {
           web = {
-            tier = "hrapp1-web" # EPG
+            tier = "web" # EPG
             subnet_cidr = "10.1.2.32/28"
             instance_name = "hrapp1-web"
             instance_count = 2
           }
           db = {
-            tier = "hrapp1-db" # EPG
+            tier = "db" # EPG
             subnet_cidr = "10.1.2.48/28"
             instance_name = "hrapp1-db"
             instance_count = 1
